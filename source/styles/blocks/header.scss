@@ -127,3 +127,56 @@
 .header__menu-link--current {
   color: $color-primary;
 }
+
+@media (min-width: $tablet-width) {
+  .header__inner {
+    justify-content: flex-start;
+    width: 768px;
+    height: 80px;
+    padding: 0 20px;
+  }
+
+  .header__brand {
+    margin-right: auto;
+  }
+
+  .header__logo--symbol {
+    display: none;
+  }
+
+  .header__logo--short {
+    display: block;
+  }
+
+  .header__nav {
+    position: static;
+    display: block;
+    width: auto;
+    border-top: none;
+  }
+
+  .header__menu {
+    display: flex;
+    gap: 20px;
+  }
+
+  .header__menu-item {
+    border-bottom: none;
+  }
+
+  .header__menu-link {
+    padding: 32px 20px;
+  }
+
+  .header__menu-link--current {
+    box-shadow: inset 0 -2px 0 $color-primary;
+  }
+
+  .header__button {
+    height: 80px;
+  }
+
+  .header__toggle {
+    display: none;
+  }
+}
