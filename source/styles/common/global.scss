@@ -1,1 +1,36 @@
-/* здесь используйте глобальные селекторы img, body, html и так далее */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+img {
+  object-fit: contain;
+  max-width: 100%;
+  height: auto;
+}
+
+.page {
+  min-width: 320px;
+  font-family: $font-family-base;
+  font-size: 16px;
+  line-height: 1.5;
+  color: $color-black;
+  background-color: $color-bg-lightest-grey;
+}
+
+.page__body {
+  margin: 0;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  border: 0;
+}

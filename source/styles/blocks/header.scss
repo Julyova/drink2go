@@ -1,5 +1,129 @@
 .header {
-  padding: 10px 15px;
-  color: #ffffff;
-  background-color: #663399;
+  position: relative;
+  background-color: $color-white;
+}
+
+.header__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 320px;
+  height: 60px;
+  margin: 0 auto;
+  padding-left: 20px;
+}
+
+.header__brand {
+  display: flex;
+  align-items: center;
+}
+
+.header__logo-link {
+  display: block;
+}
+
+.header__logo {
+  display: none;
+}
+
+.header__logo--symbol {
+  display: block;
+}
+
+.header__tagline {
+  display: none;
+}
+
+.header__controls {
+  display: flex;
+}
+
+.header__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  padding: 0;
+  text-decoration: none;
+  color: $color-black;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.header__button:hover,
+.header__button:focus-visible {
+  color: $color-primary;
+}
+
+.header__button:active {
+  color: $color-primary-darker;
+}
+
+.header__button-text {
+  display: none;
+}
+
+.header__icon--close {
+  display: none;
+}
+
+.header__toggle[aria-expanded="true"] .header__icon--burger {
+  display: none;
+}
+
+.header__toggle[aria-expanded="true"] .header__icon--close {
+  display: block;
+}
+
+.header__nav {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 10;
+  display: none;
+  width: 100%;
+  background-color: $color-white;
+  border-top: 1px solid $color-secondary;
+}
+
+.header__nav--open {
+  display: block;
+}
+
+.header__menu {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.header__menu-item {
+  border-bottom: 1px solid $color-secondary;
+}
+
+.header__menu-link {
+  display: block;
+  padding: 20px;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 0.24px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: $color-black;
+}
+
+.header__menu-link:hover,
+.header__menu-link:focus-visible {
+  color: $color-primary;
+}
+
+.header__menu-link:active {
+  color: $color-primary-darker;
+}
+
+.header__menu-link--current {
+  color: $color-primary;
 }
