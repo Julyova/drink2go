@@ -152,3 +152,58 @@
 .slider__pagination {
   display: none;
 }
+
+.slider__br {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .slider {
+    padding-bottom: 188px;
+  }
+
+  .slider__item {
+    padding: 60px 80px 0;
+  }
+
+  .slider__picture {
+    order: 1;
+    margin: 20px 0 -188px;
+  }
+
+  .slider__badge {
+    margin: 0 0 4px;
+  }
+
+  .slider__title {
+    width: 608px;
+    margin-bottom: 16px;
+    font-size: 56px;
+    line-height: 80px;
+    letter-spacing: 1.12px;
+  }
+
+  .slider__text {
+    width: 608px;
+    font-size: 20px;
+    line-height: 32px;
+  }
+
+  .slider__arrow {
+    bottom: auto;
+    width: 80px;
+    height: 640px;
+  }
+
+  .slider__arrow--prev {
+    left: calc(50% - 384px);
+  }
+
+  .slider__arrow--next {
+    right: calc(50% - 384px);
+  }
+
+  .slider__br {
+    display: inline;
+  }
+}
