@@ -127,14 +127,22 @@
   right: calc(50% - 160px);
 }
 
-.slider__arrow--prev:hover:not(:disabled),
 .slider__arrow--prev:focus-visible {
   background-image: linear-gradient(to right, $color-white, transparent);
 }
 
-.slider__arrow--next:hover:not(:disabled),
 .slider__arrow--next:focus-visible {
   background-image: linear-gradient(to left, $color-white, transparent);
+}
+
+@media (hover: hover) {
+  .slider__arrow--prev:hover:not(:disabled) {
+    background-image: linear-gradient(to right, $color-white, transparent);
+  }
+
+  .slider__arrow--next:hover:not(:disabled) {
+    background-image: linear-gradient(to left, $color-white, transparent);
+  }
 }
 
 .slider__arrow--prev:active:not(:disabled) {
