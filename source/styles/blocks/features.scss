@@ -52,3 +52,47 @@
   font-size: 14px;
   line-height: 20px;
 }
+
+@media (min-width: $tablet-width) {
+  .features {
+    padding: 60px calc(50% - 364px) 100px;
+  }
+
+  .features__title {
+    margin-bottom: 80px;
+    font-size: 42px;
+    line-height: 64px;
+  }
+
+  .features__list {
+    display: grid;
+    grid-template-columns: repeat(2, 339px);
+    gap: 30px;
+    align-items: start;
+    margin: 0 10px;
+  }
+
+  .features__item {
+    display: grid;
+    grid-template-columns: 52px 1fr;
+    column-gap: 20px;
+    place-items: start start;
+    text-align: left;
+  }
+
+  .features__icon {
+    grid-row: 1 / 3;
+    margin: 0;
+  }
+
+  .features__name {
+    margin-bottom: 10px;
+    font-size: 24px;
+    line-height: 36px;
+  }
+
+  .features__text {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
