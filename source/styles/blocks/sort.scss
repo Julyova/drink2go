@@ -1,0 +1,36 @@
+.sort {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+  text-align: left;
+}
+
+.sort__label {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+}
+
+.sort__select {
+  width: 165px;
+  height: 32px;
+  padding: 4px 30px 4px 10px;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  text-align-last: right;
+  color: $color-primary;
+  background: transparent url("../../images/select-arrow.svg") no-repeat right 10px center;
+  background-size: 10px 6px;
+  border: none;
+  border-radius: 4px;
+  appearance: none;
+  cursor: pointer;
+}
+
+.sort__select:hover,
+.sort__select:focus-visible {
+  background-color: $color-secondary;
+}
