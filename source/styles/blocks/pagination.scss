@@ -47,3 +47,37 @@
   clip: rect(0 0 0 0);
   white-space: nowrap;
 }
+
+@media (min-width: $tablet-width) {
+  .pagination__list {
+    gap: 20px;
+    justify-content: flex-end;
+  }
+
+  .pagination__link {
+    width: auto;
+    min-width: 40px;
+  }
+
+  .pagination__icon {
+    display: none;
+  }
+
+  .pagination__text {
+    position: static;
+    width: auto;
+    height: auto;
+    margin: 0;
+    padding: 0 20px;
+    overflow: visible;
+    clip: auto;
+    white-space: normal;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .pagination {
+    grid-column: 2;
+    grid-row: 5;
+  }
+}

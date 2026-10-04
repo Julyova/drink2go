@@ -34,3 +34,18 @@
 .sort__select:focus-visible {
   background-color: $color-secondary;
 }
+
+@media (min-width: $tablet-width) {
+  .sort {
+    gap: 10px;
+    justify-content: flex-end;
+    margin-bottom: 26px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .sort {
+    grid-column: 2;
+    grid-row: 3;
+  }
+}

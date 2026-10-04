@@ -67,8 +67,18 @@
   background-color: $color-primary-darker;
 }
 
-@media (hover: hover) {
-  .product__button:hover {
-    background-color: $color-primary-lighter;
+@media (min-width: $tablet-width) {
+  .product {
+    padding: 50px 30px 30px;
+  }
+
+  .product__title {
+    margin-bottom: 10px;
+    font-size: 24px;
+    line-height: 36px;
+  }
+
+  .product__text {
+    margin-bottom: 20px;
   }
 }
