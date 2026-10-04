@@ -1,0 +1,22 @@
+.map {
+  height: 420px;
+}
+
+.map__image {
+  display: block;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+@media (min-width: $tablet-width) {
+  .map {
+    height: 480px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .map {
+    height: 540px;
+  }
+}
