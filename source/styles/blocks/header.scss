@@ -158,12 +158,12 @@
     position: static;
     display: block;
     width: auto;
+    margin-right: 60px;
     border-top: none;
   }
 
   .header__menu {
     display: flex;
-    gap: 20px;
   }
 
   .header__menu-item {
@@ -205,6 +205,14 @@
 
   .header__logo--full {
     display: block;
+  }
+
+  .header__nav {
+    margin-right: 0;
+  }
+
+  .header__menu {
+    gap: 20px;
   }
 
   .header__tagline {

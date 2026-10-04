@@ -1,7 +1,7 @@
 /* stylelint-disable selector-class-pattern */
 .noUi-target {
   margin-top: 11px;
-  margin-right: 12px;
+  margin-right: 8px;
   margin-left: 12px;
   background-color: $color-light-grey;
   border: none;
@@ -11,6 +11,16 @@
 
 .noUi-horizontal {
   height: 2px;
+}
+
+.noUi-target::after {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  width: 8px;
+  height: 2px;
+  content: "";
+  background-color: $color-light-grey;
 }
 
 .noUi-connects {
