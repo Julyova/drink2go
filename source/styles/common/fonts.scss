@@ -37,3 +37,25 @@
     url("../../fonts/montserrat-bold.woff2") format("woff2"),
     url("../../fonts/montserrat-bold.woff") format("woff");
 }
+
+@font-face {
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src:
+    url("../../fonts/montserrat-ruble-regular.woff2") format("woff2"),
+    url("../../fonts/montserrat-ruble-regular.woff") format("woff");
+  unicode-range: u+20bd;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+  src:
+    url("../../fonts/montserrat-ruble-semibold.woff2") format("woff2"),
+    url("../../fonts/montserrat-ruble-semibold.woff") format("woff");
+  unicode-range: u+20bd;
+}
