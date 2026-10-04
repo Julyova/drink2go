@@ -1,0 +1,47 @@
+.button {
+  display: block;
+  padding: 8px 20px;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+  color: $color-white;
+  background-color: $color-primary;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.button:hover,
+.button:focus-visible {
+  background-color: $color-primary-lighter;
+}
+
+.button:active {
+  background-color: $color-primary-darker;
+}
+
+.button:disabled {
+  background-color: $color-grey;
+  cursor: default;
+}
+
+.button--secondary {
+  color: $color-primary;
+  background-color: $color-white;
+}
+
+.button--secondary:hover,
+.button--secondary:focus-visible {
+  color: $color-white;
+}
+
+.button--secondary:active {
+  color: $color-white;
+}
+
+.button--secondary:disabled {
+  color: $color-grey;
+  background-color: $color-light-grey;
+}

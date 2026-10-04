@@ -1,0 +1,64 @@
+.toggle {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.toggle:last-child {
+  margin-bottom: 0;
+}
+
+.toggle__indicator {
+  position: relative;
+  flex-shrink: 0;
+  width: 42px;
+  height: 24px;
+  background-color: $color-grey;
+  border-radius: 12px;
+}
+
+.toggle__indicator::before {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 20px;
+  height: 20px;
+  content: "";
+  background-color: $color-white;
+  border-radius: 50%;
+}
+
+.toggle__text {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.toggle:hover .toggle__indicator {
+  background-color: $color-primary-opacity;
+}
+
+.toggle__input:focus-visible + .toggle__indicator {
+  box-shadow: 0 0 0 2px $color-primary-lighter;
+}
+
+.toggle__input:checked + .toggle__indicator {
+  background-color: $color-primary;
+}
+
+.toggle__input:checked + .toggle__indicator::before {
+  left: 20px;
+}
+
+.toggle__input:disabled + .toggle__indicator {
+  background-color: $color-light-grey;
+}
+
+.toggle__input:disabled + .toggle__indicator::before {
+  background-color: $color-bg-lightest-grey;
+}
+
+.toggle__input:disabled ~ .toggle__text {
+  color: $color-grey;
+}

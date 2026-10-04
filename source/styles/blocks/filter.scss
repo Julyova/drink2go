@@ -1,0 +1,133 @@
+.filter {
+  margin: 0 0 40px;
+  text-align: left;
+}
+
+.filter__group {
+  min-width: 0;
+  margin: 0 0 30px;
+  padding: 0;
+  border: none;
+}
+
+.filter__title {
+  margin-bottom: 20px;
+  padding: 0;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+}
+
+.filter__range {
+  margin-bottom: 35px;
+}
+
+.filter__prices {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
+.filter__prices::before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 8px;
+  height: 2px;
+  margin: -1px 0 0 -4px;
+  content: "";
+  background-color: $color-grey;
+}
+
+.filter__input {
+  width: 118px;
+  height: 40px;
+  padding: 8px 10px;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: center;
+  color: $color-black;
+  background-color: $color-white;
+  border: 2px solid $color-primary-lighter;
+  border-radius: 4px;
+  appearance: textfield;
+}
+
+.filter__input::placeholder {
+  color: $color-grey;
+  opacity: 100%;
+}
+
+.filter__input:focus {
+  border-color: $color-black;
+  outline: none;
+}
+
+.filter__input:disabled {
+  color: $color-grey;
+  background-color: $color-bg-lightest-grey;
+  border-color: $color-light-grey;
+}
+
+.filter__buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .filter {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px 30px;
+    align-items: start;
+  }
+
+  .filter__group {
+    margin: 0;
+  }
+
+  .filter__range {
+    margin-bottom: 31px;
+  }
+
+  .filter__input {
+    width: 86px;
+  }
+
+  .filter__buttons {
+    flex-direction: row;
+    grid-column: 1 / -1;
+    gap: 20px;
+    justify-content: center;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .filter {
+    display: block;
+    grid-column: 1;
+    grid-row: 3 / span 3;
+    margin: 4px 0 0;
+  }
+
+  .filter__group {
+    margin: 0 0 30px;
+  }
+
+  .filter__range {
+    margin-bottom: 33px;
+  }
+
+  .filter__input {
+    width: 134px;
+  }
+
+  .filter__buttons {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 40px;
+  }
+}
