@@ -57,6 +57,10 @@
   cursor: pointer;
 }
 
+.product__button:hover {
+  background-color: $color-primary-lighter;
+}
+
 .product__button:focus-visible {
   background-color: $color-primary-lighter;
   outline: 2px solid $color-primary-darker;
