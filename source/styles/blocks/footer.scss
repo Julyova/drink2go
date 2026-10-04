@@ -188,3 +188,40 @@
     border-top: none;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .footer__inner {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0 30px;
+    width: 1440px;
+    padding: 40px;
+  }
+
+  .footer__brand {
+    flex-direction: column;
+    grid-column: auto;
+    align-items: flex-start;
+    justify-content: flex-start;
+    height: auto;
+  }
+
+  .footer__tagline {
+    display: block;
+    margin: 12px 0 0;
+    font-size: 14px;
+    line-height: 20px;
+    color: $color-black;
+  }
+
+  .footer__social {
+    margin-top: 48px;
+  }
+
+  .footer__column {
+    margin-top: 10px;
+  }
+
+  .footer__developed {
+    margin-top: 19px;
+  }
+}
