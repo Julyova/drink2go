@@ -60,6 +60,10 @@
   opacity: 100%;
 }
 
+.filter__input:hover {
+  border-color: $color-primary;
+}
+
 .filter__input:focus {
   border-color: $color-black;
   outline: none;
