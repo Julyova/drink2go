@@ -64,8 +64,8 @@
 
 .slider__buy {
   display: flex;
+  gap: 8px;
   align-items: center;
-  justify-content: space-between;
   width: 230px;
 }
 
@@ -85,6 +85,7 @@
 
 .slider__button {
   display: inline-block;
+  margin-left: auto;
   padding: 8px 20px;
   font-size: 16px;
   line-height: 24px;
