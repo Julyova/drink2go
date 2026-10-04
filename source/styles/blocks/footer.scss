@@ -153,3 +153,38 @@
 .footer__developed-link:active {
   color: $color-primary-darker;
 }
+
+@media (min-width: $tablet-width) {
+  .footer__inner {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    width: 768px;
+    padding: 40px 20px;
+  }
+
+  .footer__brand {
+    grid-column: 1 / -1;
+    height: 40px;
+    padding: 0;
+  }
+
+  .footer__logo--short {
+    display: none;
+  }
+
+  .footer__logo--full {
+    display: block;
+  }
+
+  .footer__column {
+    padding: 0;
+    border-top: none;
+  }
+
+  .footer__developed {
+    grid-column: 1 / -1;
+    padding: 0;
+    border-top: none;
+  }
+}
