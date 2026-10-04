@@ -1,0 +1,58 @@
+/* stylelint-disable selector-class-pattern */
+.noUi-target {
+  margin-top: 11px;
+  margin-right: 12px;
+  margin-left: 12px;
+  background-color: $color-light-grey;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.noUi-horizontal {
+  height: 2px;
+}
+
+.noUi-connects {
+  overflow: visible;
+  border-radius: 0;
+}
+
+.noUi-connect {
+  top: -1px;
+  height: 4px;
+  background-color: $color-primary-lighter;
+}
+
+.noUi-horizontal .noUi-handle {
+  top: -11px;
+  right: -12px;
+  width: 24px;
+  height: 24px;
+  background-color: $color-white;
+  border: 2px solid $color-primary-lighter;
+  border-radius: 50%;
+  box-shadow: none;
+  cursor: pointer;
+}
+
+.noUi-handle::before,
+.noUi-handle::after {
+  display: none;
+}
+
+.noUi-handle:focus-visible {
+  background-color: $color-secondary;
+  outline: 2px solid $color-primary-darker;
+  outline-offset: 2px;
+}
+
+.noUi-active {
+  background-color: $color-primary-opacity;
+}
+
+@media (hover: hover) {
+  .noUi-handle:hover {
+    background-color: $color-secondary;
+  }
+}

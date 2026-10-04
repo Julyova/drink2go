@@ -39,3 +39,49 @@ stepButtons.forEach((stepButton, index) => {
     showSlide(index);
   });
 });
+
+const filterForm = document.querySelector('#filter');
+const priceRange = document.querySelector('#price-range');
+const priceFrom = document.querySelector('#price-from');
+const priceTo = document.querySelector('#price-to');
+
+if (priceRange && window.noUiSlider) {
+  const PRICE_MIN = 0;
+  const PRICE_MAX = 1000;
+
+  window.noUiSlider.create(priceRange, {
+    start: [PRICE_MIN, 900],
+    connect: true,
+    step: 1,
+    range: {
+      min: PRICE_MIN,
+      max: PRICE_MAX,
+    },
+    handleAttributes: [
+      {'aria-label': 'Минимальная цена'},
+      {'aria-label': 'Максимальная цена'},
+    ],
+  });
+
+  priceRange.noUiSlider.on('update', (values, handle) => {
+    const value = Math.round(values[handle]);
+
+    if (handle === 0) {
+      priceFrom.value = value === PRICE_MIN ? '' : value;
+    } else {
+      priceTo.value = value;
+    }
+  });
+
+  priceFrom.addEventListener('change', () => {
+    priceRange.noUiSlider.set([priceFrom.value || PRICE_MIN, null]);
+  });
+
+  priceTo.addEventListener('change', () => {
+    priceRange.noUiSlider.set([null, priceTo.value || PRICE_MAX]);
+  });
+
+  filterForm.addEventListener('reset', () => {
+    priceRange.noUiSlider.reset();
+  });
+}
